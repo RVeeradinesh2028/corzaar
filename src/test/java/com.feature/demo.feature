@@ -81,4 +81,14 @@ Scenario: verify Certificates & Approvals module
 Scenario: verify Funnel Insights module  
      Given User clicks on Funnel Insights 
      Then User validate the Learner Retention & Funnel Insights 
+     Then User validate Top Performing Programs
+     Then User validate TP 
      
+Scenario: verify User signout
+     Given User clicks on signout icon
+     
+     
+     
+         
+    
+

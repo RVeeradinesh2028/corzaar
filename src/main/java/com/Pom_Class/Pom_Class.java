@@ -128,18 +128,15 @@ public class Pom_Class {
     public WebElement savetemplate;
     @FindBy(xpath="//div[@class='overflow-x-auto']")
     public WebElement Vtemplatestudio;
-  //@FindBy(xpath="")
-    //public WebElement 
-  //@FindBy(xpath="")
-    //public WebElement 
-  //@FindBy(xpath="")
-    //public WebElement 
-  //@FindBy(xpath="")
-    //public WebElement 
-  //@FindBy(xpath="")
-    //public WebElement 
-  //@FindBy(xpath="")
-    //public WebElement 
-  //@FindBy(xpath="")
-    //public WebElement 
+    @FindBy(xpath="//span[text()='Funnel Insights']")
+    public WebElement funnelinsights; 
+    @FindBy(xpath="//h1[text()='Learner Retention & Funnel Insights']")
+    public WebElement VLearnerRetentionFunnelinsights;
+    @FindBy(xpath="//h2[@class='text-lg font-bold text-ink dark:text-dark-ink flex items-center gap-2']")
+    public WebElement VTopPerformingPrograms;
+    @FindBy(xpath="//div[@class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6']")
+    public WebElement VTp; 
+    @FindBy(xpath="//button[@title='Sign out']")
+    public WebElement signout;
+  
 } 

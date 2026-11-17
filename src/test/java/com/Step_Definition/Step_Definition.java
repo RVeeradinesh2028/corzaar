@@ -323,6 +323,33 @@ public class Step_Definition extends Base_Class {
 		Assert.assertTrue(V.Vtemplatestudio.isDisplayed());
 	}
 
+	@Given("User clicks on Funnel Insights")
+	public void user_clicks_on_funnel_insights() {
+	    click(V.funnelinsights);
+	}
+
+	@Then("User validate the Learner Retention & Funnel Insights")
+	public void user_validate_the_learner_retention_funnel_insights() {
+		Assert.assertTrue(V.VLearnerRetentionFunnelinsights.isDisplayed());
+	}
+
+	@Then("User validate Top Performing Programs")
+	public void user_validate_top_performing_programs() {
+		Assert.assertTrue(V.VTopPerformingPrograms.isDisplayed());
+	}
+
+	@Then("User validate TP")
+	public void user_validate_tp() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.visibilityOf(V.VTp));
+		Assert.assertTrue(V.VTp.isDisplayed());
+	}
+
+	@Given("User clicks on signout icon")
+	public void user_clicks_on_signout_icon() {
+		click(V.signout);
+	}
+	
 }	
 
 	
