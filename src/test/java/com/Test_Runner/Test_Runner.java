@@ -24,9 +24,8 @@ public class Test_Runner extends Base_Class {
 		BrowserLaunch();
 	}
 
-	@AfterClass
-	public static void Close() {
-		Quit();
+	//@AfterClass
+	//public static void Close() {
+		//Quit();
 	
-}
 }

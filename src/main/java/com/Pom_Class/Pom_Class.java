@@ -138,5 +138,11 @@ public class Pom_Class {
     public WebElement VTp; 
     @FindBy(xpath="//button[@title='Sign out']")
     public WebElement signout;
-  
+    @FindBy(xpath="//input[@id='institute-contact-person-/-faculty-name']")
+    public WebElement arul;
+    @FindBy(xpath="//span[text()='Failed to send OTP']")
+    public WebElement Vfaildsendotp;
+    @FindBy(xpath="//span[text()='Merchant']")
+    public WebElement Merchantmodule;
+    
 } 

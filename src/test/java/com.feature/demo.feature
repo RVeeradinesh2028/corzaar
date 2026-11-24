@@ -87,8 +87,20 @@ Scenario: verify Funnel Insights module
 Scenario: verify User signout
      Given User clicks on signout icon
      
-     
-     
+Scenario Outline: verify OTP failure with invalid Institute Manager Mobile Number
+     Given user click on merchant module 
+     Then User validate the Sign in Page 
+     When User Enter Institute Manager MobileNumber "<MobileNumber>" 
+     And user enter FacultyName "<FacultyName>"
+     And User clicks on Send verification code 
+     Then User validate Faild to send OTP
+     Then  User should be navigated to the OTP page "<result>"
+
+Examples:
+| MobileNumber | FacultyName | result  |
+| 6380747      | Arul        | invalid |
+|123456        | selva        | invalid |    
+|98765         | hari        | invalid |     
          
     
 

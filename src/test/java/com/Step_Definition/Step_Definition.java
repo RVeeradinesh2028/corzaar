@@ -349,8 +349,24 @@ public class Step_Definition extends Base_Class {
 	public void user_clicks_on_signout_icon() {
 		click(V.signout);
 	}
+	@When("user enter Faculty Name {string}")
+	public void user_enter_faculty_name(String string) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.visibilityOf(V.arul));
+		Sendkeys(V.arul, string);
+	}
+
+	@Then("User validate Faild to send OTP")
+	public void user_validate_faild_to_send_otp() {
+		Assert.assertTrue(V.Vfaildsendotp.isDisplayed());
+	}
+	@Given("user click on merchant module")
+	public void user_click_on_merchant_module() {
+		click(V.Merchantmodule);
+	}
 	
 }	
+
 
 	
 
